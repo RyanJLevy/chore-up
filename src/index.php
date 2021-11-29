@@ -21,7 +21,7 @@
                     <p>password</p>
                     <input type="password" class="form-input" id="password-input" name="password" placeholder="enter your password">
                 </div>
-                <button id="btn-login" type="submit">login</button>
+                <button class="primary-btn" id="btn-login" type="submit">login</button>
             </form>
             <p id="sign-up-text">don't have an account? <a id="sign-up-link" href="create-account.php">sign up</a></p>
         </div>

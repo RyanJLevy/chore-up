@@ -22,7 +22,7 @@
                     <p>password</p>
                     <input type="password" class="form-input" id="password-input" name="password" placeholder="enter your password">
                 </div>
-                <button id="btn-login" type="submit">sign up</button>
+                <button class="primary-btn" id="btn-login" type="submit">sign up</button>
             </form>
             <p id="sign-up-text">already have an account? <a id="sign-up-link" href="index.php">login</a></p>
         </div>

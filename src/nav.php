@@ -4,7 +4,9 @@
     </div>
 
     <div class="nav-links">
-        <a href="#">home</a>
+        <a href="home.php">home</a>
+        <!-- Dynamically render with sessions -->
+        <a href="index.php">logout</a>
     </div>
 
 </div>

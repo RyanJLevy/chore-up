@@ -1,0 +1,100 @@
+#page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+#create-team-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--foreground-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width : 50%;
+    padding : 2rem 0;
+}
+#create-team-container > form > h1 {
+    font-family: 'Fredoka One';
+}
+#create-team-container > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.create-btn {
+    width : 100%;
+}
+.form-input {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    padding : 0.5rem;
+    font-size: 1.2rem;
+    border : 0.2rem solid var(--secondary-color);
+    width: 100%;
+    border-radius: 10px;
+}
+.form-input::placeholder {
+    font-family: 'Open Sans';
+    color : var(--placeholder-color);
+}
+.field-header {
+    color : var(--secondary-color);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+/* USERS */
+.header-add-players {
+    padding : 0;
+    margin-bottom : 0;
+}
+.user-card {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding : 0 1rem;
+    border : 0.2rem solid var(--button-accent-color);
+    width: 100%;
+    border-radius: 10px;
+    margin : 0.5rem 0;
+}
+.user-card:hover {
+    cursor: default;
+}
+.card-username {
+    color : #333333;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.btn-remove {
+    position: absolute;
+    right: 0;
+    top : 0;
+    width : 10%;
+    padding : 0;
+    border : 0.2rem solid var(--button-accent-color);
+    margin : 0.5rem;
+}
+#user-search-container {
+    padding : 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#user-name-input {
+    width: 78%;
+}
+#user-search-btn {
+    width: 18%;
+    padding : 0.5rem;
+}
+
+@media (max-width : 991px) {
+    #create-team-container {
+        width : 80%;
+    }
+}

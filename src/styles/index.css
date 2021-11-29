@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300;400;500;600;800&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -34,10 +34,48 @@ body {
     color: var(--secondary-color);
     font-weight: bold;
     text-decoration: none;
+    display: inline;
+    padding : 0 1rem;
 }
 .nav-title-container > h1 {
     font-family: 'Fredoka One';
 }
 .nav-title-container > h1 > span {
     color : var(--primary-color);
+}
+.primary-btn {
+    font-family: 'Open Sans';
+    font-size: medium;
+    margin : 2rem 0;
+    padding : 1rem;
+    width: 70%;
+    color : white;
+    font-style: normal;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border: 0.3rem solid var(--button-accent-color);
+    border-radius: 10px;
+}
+.primary-btn:hover {
+    transition: 0.5s ease;
+    background-color: var(--button-hover-color);
+    cursor: pointer;
+}
+.secondary-btn {
+    font-family: 'Open Sans';
+    font-size: medium;
+    margin : 2rem 0;
+    padding : 1rem;
+    width: 70%;
+    color : white;
+    font-style: normal;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    border: 0.3rem solid #DBDBDB;
+    border-radius: 10px;    
+}
+.secondary-btn:hover {
+    transition: 0.5s ease;
+    background-color: #B5B5B5;
+    cursor: pointer;
 }
