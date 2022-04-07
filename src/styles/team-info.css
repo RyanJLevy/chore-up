@@ -1,0 +1,331 @@
+html {
+    position: relative;
+}
+#page-container {
+    padding : 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+}
+.content-container {
+    width : 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.information-container {
+    background-color: var(--foreground-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width : 30%;
+    padding : 2rem 0;
+}
+#team-info-container {
+    width : 90%;
+}
+.team-info {
+    margin-top: 1rem;
+    min-width: 50%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0 1rem;
+    padding-bottom: 1rem;
+}
+#information-chore-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Fredoka One';
+    color: var(--primary-color);
+}
+.team-info-header {
+    color : var(--secondary-color);
+    font-size: 1rem;
+}
+.team-info-stat {
+    color : var(--primary-color);
+}
+#team-info-more {
+    display: none;
+    width : 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem;
+}
+#btn-favorite {
+    color : var(--secondary-color);
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    padding : 0.5rem 1rem;
+}
+#btn-favorite:hover {
+    cursor: pointer;
+    color : var(--primary-color);
+    opacity: 50%;
+}
+#mobile-info-divide {
+    display: none;
+}
+#btn-team-info-view {
+    margin: 0;
+    padding-top: 2rem;
+    border: none;
+}
+#info-title-divide {
+    color : var(--secondary-color);
+    font-family: 'Open Sans';
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+.chore-card-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.view-more-btn {
+    color : var(--secondary-color);
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    padding : 0.5rem 1rem;
+    border-left: 2px var(--secondary-color) solid;
+}
+.view-more-btn:hover {
+    cursor: pointer;
+    color : #333333;
+    transition: 0.5s ease;
+}
+.delete-chore-btn {
+    color : var(--secondary-color);
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    padding : 0.5rem 1rem;
+    border-left: 2px var(--secondary-color) solid;
+}
+.delete-chore-btn:hover {
+    cursor: pointer;
+    color : #333333;
+    transition: 0.5s ease;
+}
+/* Done Container */
+.chore-container {
+    background: rgba(253, 253, 253, 0.6);
+    margin : 1rem 0;
+    width : 90%;
+    padding : 0 1rem;
+    padding-bottom: 1rem;
+}
+.chore-container > h1 {
+    font-family: 'Fredoka One';
+    text-align: center;
+}
+.todo-container {
+    max-height : 80vh;
+}
+.complete-container {
+    max-height : 67vh;
+}
+.chore-card-container {
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: scroll;
+
+}
+#completed-card-container {
+    max-height: 40vh;
+}
+#todo-card-container {
+    max-height : 53vh;
+}
+.chore-card {
+    margin : 0.5rem 0;
+    padding : 0 1rem;
+    background-color: var(--foreground-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width : 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chore-card > h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#add-chore-btn {
+    width: 30%;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Add Chore Popup */
+#add-chore-popup {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top : 8rem;
+    width : 60%;
+    background-color: var(--foreground-color);
+    border-radius: 10px;
+    padding : 0.5rem;
+    z-index: 9;
+}
+#popup-overlay {
+    display: none;
+    min-height: 100vh;
+    background-color: #333333;
+    opacity: 35%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 7;
+
+}
+.input-field {
+    font-family: 'Open Sans';
+    font-weight: 800;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 100%;
+}
+.input-field::placeholder {
+    font-family: 'Open Sans';
+    color : var(--placeholder-color);
+}
+.input-select {
+    font-family: 'Open Sans';
+    font-weight: 800;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 100%;
+}
+.btn-exit {
+    position: absolute;
+    right: 0;
+    top : 0;
+    width : auto;
+    padding : 0.1rem 0.2rem;
+    background: none;
+    color : var(--secondary-color);
+    border : 0.15rem solid var(--secondary-color);
+    border-radius: 5px;
+    margin : 0.5rem;
+}
+.btn-exit:hover {
+    background-color: var(--secondary-color);
+    color : var(--foreground-color);
+    cursor: pointer;
+}
+
+/* CHORE INFO POPUP */
+#chore-info-popup {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top : 8rem;
+    width : 40%;
+    background-color: var(--foreground-color);
+    border-radius: 10px;
+    padding : 0.5rem;
+    z-index: 9;
+}
+.chore-info-header {
+    color : var(--secondary-color);
+}
+.card-player-name {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.chore-info-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-mark-done, .btn-use-pass {
+    width : 80%;
+}
+
+@media (max-width : 991px) {
+    .content-container {
+        width : 80%;
+    }
+    #page-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .team-info {
+        width : 60%;
+    }
+    #add-chore-popup, #chore-info-popup {
+        width : 70%;
+    }
+    #add-chore-btn {
+        width : 50%;
+    }
+}
+@media (max-width : 776px) {
+    #info-title-divide {
+        display: none;
+    }
+    .team-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #information-chore-title {
+        padding-top : 1rem;
+    }
+    #mobile-info-divide {
+        display: block;
+        width : 100%;
+        color: var(--secondary-color);
+    }
+    #team-info-more {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #add-chore-btn {
+        width : 60%;
+    }
+    #add-chore-popup, #chore-info-popup {
+        width : 90%;
+    }
+    #chore-info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-mark-done, .btn-use-pass {
+        width : 100%;
+    }
+}
+

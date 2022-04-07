@@ -55,6 +55,14 @@
     color : var(--primary-color);
     text-decoration: none;
 }
+/* ERROR */
+.is-invalid {
+    border : 2px solid rgb(205, 92, 92);
+    background-color: rgb(205, 92, 92, .25);
+}
+.is-invalid::placeholder {
+    color : transparent;
+}
 
 @media (max-width : 776px) {
     #login-container {

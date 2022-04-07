@@ -67,6 +67,8 @@
     margin : 1%;
 }
 .add-team-btn {
+    text-align: center;
+    text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
     width: 50%;
@@ -130,7 +132,7 @@
     #section-split {
         display: block;
         width: 0;
-        height : 20rem;
+        height : 30rem;
         background-color: var(--secondary-color);
         border: .1rem solid var(--secondary-color);
         margin : 0 1rem;

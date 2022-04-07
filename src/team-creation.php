@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>choreUP | Team Creation</title>
     <script src="https://kit.fontawesome.com/d4a13a138b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/create-team.css">
 </head>
@@ -20,10 +21,6 @@
                     <input type="text" id="team-name-input" class="form-input" name="team-name" placeholder="enter team name">
                     <p class="field-header">team players</p>
                     <div id="added-user-container">
-                        <div class="user-card">
-                            <p class="card-username">username1</p>
-                            <button class="primary-btn btn-remove">X</button>
-                        </div>
 
                     </div>
                     <p class="field-header header-add-players">add players</p>
@@ -33,7 +30,7 @@
                     </div>
 
                 </div>
-                <button type="submit" class="primary-btn create-btn">lets go!</button>
+                <button type="submit" id="create-team-btn" class="primary-btn create-btn">lets go!</button>
             </form>
         </div>
 

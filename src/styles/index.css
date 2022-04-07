@@ -79,3 +79,14 @@ body {
     background-color: #B5B5B5;
     cursor: pointer;
 }
+/* ERROR MESSAGES */
+.error-message {
+    font-family: 'Open Sans';
+    color : indianred;
+    font-style: italic;
+}
+.success-message {
+    font-family: 'Open Sans';
+    color : seagreen;
+    font-style: italic; 
+}

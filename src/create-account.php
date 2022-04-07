@@ -12,7 +12,7 @@
     <?php include "nav.php"; ?>
     <div id="page-container">
         <div id="login-container">
-            <form action="" method="">
+            <form action="create-account-confirmation.php" method="POST">
                 <h1>create account</h1>
                 <div id="field-container">
                     <p>email</p>
@@ -28,5 +28,30 @@
         </div>
 
     </div>
+
+    <script>
+		document.querySelector('form').onsubmit = function(){
+			if ( document.querySelector('#username-input').value.trim().length == 0 ) {
+				document.querySelector('#username-input').classList.add('is-invalid');
+			} else {
+				document.querySelector('#username-input').classList.remove('is-invalid');
+			}
+
+			if ( document.querySelector('#email-input').value.trim().length == 0 ) {
+				document.querySelector('#email-input').classList.add('is-invalid');
+			} else {
+				document.querySelector('#email-input').classList.remove('is-invalid');
+			}
+
+			if ( document.querySelector('#password-input').value.trim().length == 0 ) {
+				document.querySelector('#password-input').classList.add('is-invalid');
+			} else {
+				document.querySelector('#password-input').classList.remove('is-invalid');
+			}
+
+			return ( !document.querySelectorAll('.is-invalid').length > 0 );
+		}
+	</script>
+
 </body>
 </html>
