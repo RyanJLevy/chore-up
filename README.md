@@ -11,3 +11,4 @@ Thanks for checking it out!
 
 <em>Quick Disclaimer</em>
 * This project isn't currently hooked up to a live server/db so all I have is my word in saying I swear it works!
+* Here's <a href="https://www.figma.com/file/nypfh1abaMBAt1BqYte8ys/ITP303-Final-Project?node-id=0%3A1">a link to the Figma hi-fi mockup!</a>
